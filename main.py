@@ -31,6 +31,6 @@ def handler(event=None, context=None):
     # profile["proxy"] = {f"proxy": f"http://{proxie}"}
 
     chrome = uc.Chrome(options, driver_executable_path=driver_path, browser_executable_path=browser_path)
-    chrome.get('https://google.com/')
+    chrome.get("https://www.reddit.com/register/")
 
     return chrome.find_element(by=By.XPATH, value='//html').text
