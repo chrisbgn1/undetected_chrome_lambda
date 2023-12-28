@@ -27,6 +27,9 @@ def handler(event=None, context=None):
     options.add_argument(f'--disk-cache-dir={mkdtemp()}')
     options.add_argument('--remote-debugging-port=9222')
 
+    # profile = profiles.Windows()  # or .Android()
+    # profile["proxy"] = {f"proxy": f"http://{proxie}"}
+
     chrome = uc.Chrome(options, driver_executable_path=driver_path, browser_executable_path=browser_path)
     chrome.get('https://google.com/')
 
