@@ -3,6 +3,8 @@ import undetected_chromedriver as uc
 from tempfile import mkdtemp
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium_profiles.profiles import profiles
+
 
 def handler(event=None, context=None):
     driver_path = '/tmp/chromedriver'
